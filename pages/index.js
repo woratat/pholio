@@ -30,6 +30,7 @@ export default function Home({ session }) {
 export async function getServerSideProps(context) {
 
   const session = await getSession(context);
+  console.log(session);
 
   return {
     props: {
